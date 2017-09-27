@@ -21,7 +21,7 @@
 \def\vjj{\ensuremath{V\kern -0.2em j\kern -0.1emj}\xspace}
 \def\w{\ensuremath{W}\xspace}
 \def\z{\ensuremath{Z}\xspace}
-\def\mjj{\ensuremath{M_{jj}}}
+\def\mjj{\ensuremath{M_{jj}}\xspace}
 
 \abstract{%The ATLAS experiment with data collected by the Large Hadron Collider (LHC).
 The most recent ATLAS results on the production of single \w and \z bosons with two jets at high invariant
@@ -68,7 +68,7 @@ regions.
 \section{\wjj Production Measurement}
 
 \begin{figure}[t!]
-  %\centering
+  \centering
   \begin{subfigure}[t]{0.74\textwidth}
     \centering
     \includegraphics[width=.35\textwidth]{STDM-2014-11/fig_01a.pdf}~~
@@ -83,17 +83,31 @@ regions.
     \includegraphics[width=.99\textwidth]{STDM-2014-11/fig_02b.pdf}
     \caption{}
   \end{subfigure}
-  \caption{Feynman diagrams of (a) EW and (b) strong \wjj production.}
+  \caption{Feynman diagrams of (a) EW and (b) strong (QCD) \wjj production.}
 \end{figure}
 
 Figure~\ref{wjj-cartoons}.
 
 \begin{figure}
-\centering
-\raisebox{0.3\height}{\includegraphics[width=.54\textwidth]{STDM-2014-11/fig_03.pdf}}
-%% \includegraphics[width=.49\textwidth]{STDM-2014-11/fig_04.pdf}
-\includegraphics[width=.44\textwidth]{STDM-2014-11/fig_05b.pdf}
-  \caption{Left: Depiction of...}
+  \centering
+  \begin{subfigure}[t]{0.50\textwidth}
+    \centering
+    %% \raisebox{0.3\height}{\includegraphics[width=.54\textwidth]{STDM-2014-11/fig_03.pdf}}
+    %% \includegraphics[width=.49\textwidth]{STDM-2014-11/fig_04.pdf}
+    \includegraphics[width=.99\textwidth]{STDM-2014-11/fig_05b.pdf}\vspace{-6mm}
+    \caption{}
+  \end{subfigure}%
+  ~
+  \begin{subfigure}[t]{0.50\textwidth}
+    \centering
+    \includegraphics[width=.99\textwidth]{STDM-2014-11/fig_09b.pdf}\vspace{-6mm}
+    \caption{}
+  \end{subfigure}%
+  \caption{(a) The lepton centrality distribution in the \wjj inclusive region. EW \wjj production
+typically has smaller lepton centrality than QCD production. (b) The \mjj spectrum in the signal region
+of the EW \wjj analysis. A fit to this distribution is used to determine the relative QCD and EW cross
+sections.
+}
   \label{wjj-cartoons}
 \end{figure}
 
@@ -106,25 +120,32 @@ Figure~\ref{wjj-cartoons}.
 %%   \label{wjj-discriminating-variables}
 %% \end{figure}
 
-Figure~\ref{wjj-mjj-distribution}.
-
-\begin{figure}
-\centering
-  \includegraphics[width=.49\textwidth]{STDM-2014-11/fig_09b.pdf}
-  \caption{The $m_{jj}$ distribution.}
-  \label{wjj-mjj-distribution}
-\end{figure}
+%% Figure~\ref{wjj-mjj-distribution}.
+%% \begin{figure}
+%% \centering
+%%   \includegraphics[width=.49\textwidth]{STDM-2014-11/fig_09b.pdf}
+%%   \caption{The $m_{jj}$ distribution.}
+%%   \label{wjj-mjj-distribution}
+%% \end{figure}
 
 Figure~\ref{wjj-differential-distributions}.
 
 \begin{figure}
-\centering
-\includegraphics[width=.49\textwidth]{STDM-2014-11/fig_16a.pdf}
-\includegraphics[width=.49\textwidth]{STDM-2014-11/fig_19b.pdf}
-  \caption{\wjj differential distributions of the dijet mass in two fiducial regions. Left, the $\mjj$
+  \centering
+  \begin{subfigure}[t]{0.50\textwidth}
+    \centering
+    \includegraphics[width=.99\textwidth]{STDM-2014-11/fig_16a.pdf}\vspace{-5mm}
+    \caption{}
+  \end{subfigure}%
+  ~
+  \begin{subfigure}[t]{0.50\textwidth}
+    \includegraphics[width=.99\textwidth]{STDM-2014-11/fig_19b.pdf}\vspace{-5mm}
+    \caption{}
+  \end{subfigure}%
+  \caption{\wjj differential distributions of the dijet mass in two fiducial regions. (a) The $\mjj$
     spectrum in the fiducial region $\mjj>0.5$~TeV. The QCD-only predictions (dashed lines) do not
     adequately describe the observed events; QCD+EW predictions agree well with the data.
-    Right: the normalized differential distribution of the EW \wjj dijet spectrum in the region
+    (b) The normalized differential distribution of the EW \wjj dijet spectrum in the region
     $\mjj>1.0$~TeV.
   }
   \label{wjj-differential-distributions}
@@ -164,8 +185,8 @@ Figure~\ref{zjj-dijet-post-fit}.
 \begin{figure}
   \centering
   \begin{subfigure}[t]{0.50\textwidth}
-  \includegraphics[width=.99\textwidth]{STDM-2016-09/fig_02b.pdf}\vspace{-6mm}
-  \caption{}
+    \includegraphics[width=.99\textwidth]{STDM-2016-09/fig_02b.pdf}\vspace{-6mm}
+    \caption{}
   \end{subfigure}%
   ~
   \begin{subfigure}[t]{0.50\textwidth}
@@ -189,11 +210,18 @@ These results are consistent with Standard Model expectations.
 Figure~\ref{zjj-wjj-summary-results}
 
 \begin{figure}
-\centering
-  \includegraphics[width=.57\textwidth]{STDM-2016-09/fig_06.pdf}
-  \includegraphics[width=.42\textwidth]{STDM-2016-09/fig_09.pdf}
-  \caption{Left: \zjj measurement vs center-of-mass energy. Right: summary of electroweak \wjj and \zjj
-measurements at ATLAS and CMS.}
+  \centering
+  \begin{subfigure}[t]{0.57\textwidth}
+    \includegraphics[width=.99\textwidth]{STDM-2016-09/fig_06.pdf}
+    \caption{}
+  \end{subfigure}%
+  ~
+  \begin{subfigure}[t]{0.42\textwidth}
+    \includegraphics[width=.99\textwidth]{STDM-2016-09/fig_09.pdf}
+    \caption{}
+  \end{subfigure}%
+  \caption{(a) The \zjj production cross section as a function of center-of-mass energy for two fiducial
+    signal regions. (b) summary of electroweak \wjj and \zjj measurements at ATLAS and CMS.}
   \label{zjj-wjj-summary-results}
 \end{figure}
 
