@@ -22,6 +22,9 @@
 \def\w{\ensuremath{W}\xspace}
 \def\z{\ensuremath{Z}\xspace}
 \def\mjj{\ensuremath{M_{jj}}\xspace}
+\def\etmiss{\ensuremath{E_\mathrm{T}^\mathrm{miss}}\xspace}
+\def\pt{\ensuremath{p_\mathrm{T}}\xspace}
+\def\ptl{\ensuremath{p^\ell_\mathrm{T}}\xspace}
 
 \abstract{%The ATLAS experiment with data collected by the Large Hadron Collider (LHC).
 The most recent ATLAS results on the production of single \w and \z bosons with two jets at high invariant
@@ -65,8 +68,6 @@ gap and limit the jet radiation inside the gap.
 Both analyses use similar approaches to measure the QCD and EW components of their respective signal
 regions.
 
-\section{\wjj Production Measurement}
-
 \begin{figure}[t!]
   \centering
   \begin{subfigure}[t]{0.74\textwidth}
@@ -86,7 +87,29 @@ regions.
   \caption{Feynman diagrams of (a) EW and (b) strong (QCD) \wjj production.}
 \end{figure}
 
-Figure~\ref{wjj-cartoons}.
+\section{\wjj Production Measurement}
+
+The basic event selection of the \wjj analysis requires one lepton with ${\pt>25}$~GeV to trigger the
+collection of the event. To select events with a \w boson, the missing transverse momentum \etmiss
+must be above 20~GeV, and the transverse mass of the lepton and \etmiss, defined as
+\[
+m_\mathrm{T}=\sqrt{ 2\ptl \cdot \etmiss \left[ 1-\cos\Delta\phi(\ell,\etmiss) \right]},
+\]
+must be above 40~GeV. To select events with an EW or VBF-like topology, two high-\pt jets with
+${\mjj>500}$~GeV are required. Finally, to describe the relationship between the rapidity of the two
+high-\pt jets and other objects in the event, a centrality variable is defined as
+\[
+C_{obj} \equiv \left| \frac{y_{obj} - (y_1 + y_2)/2}{y_1 - y_2}  \right|.
+\]
+%
+Events in the signal region must have one lepton inside the central rapidity region defined as
+${C_\ell<0.4}$ and no additional jets inside this defined central region.
+%
+
+Regions:
+
+Figure~\ref{wjj-variables} depicts the lepton centrality variable in the inclusive \wjj region and
+the dijet invariant mass in the \wjj signal region. Both variables provide good
 
 \begin{figure}
   \centering
@@ -104,11 +127,12 @@ Figure~\ref{wjj-cartoons}.
     \caption{}
   \end{subfigure}%
   \caption{(a) The lepton centrality distribution in the \wjj inclusive region. EW \wjj production
-typically has smaller lepton centrality than QCD production. (b) The \mjj spectrum in the signal region
+typically has smaller lepton centrality than QCD production. The maximum cut value is indicated with an
+arrow. (b) The \mjj spectrum in the signal region
 of the EW \wjj analysis. A fit to this distribution is used to determine the relative QCD and EW cross
 sections.
 }
-  \label{wjj-cartoons}
+  \label{wjj-variables}
 \end{figure}
 
 %% Figure~\ref{wjj-discriminating-variables}.
